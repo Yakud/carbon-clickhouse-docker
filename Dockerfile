@@ -1,7 +1,11 @@
 FROM golang:1.9.3-stretch
 
-RUN git clone https://github.com/lomik/carbon-clickhouse.git && \
+ENV GIT_REPO=https://github.com/lomik/carbon-clickhouse.git
+ENV GIT_TAG=v0.6.3
+
+RUN git clone ${GIT_REPO} && \
     cd carbon-clickhouse && \
+    git checkout tags/${GIT_TAG} && \
     make submodules && \
     make
 
