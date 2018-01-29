@@ -5,4 +5,4 @@ DESCRIPTION:="carbon-clickhouse docker image"
 all: build
 
 build:
-	docker build -t yakud/carbon-clickhouse .
+	docker build -t yakud/carbon-clickhouse-docker .

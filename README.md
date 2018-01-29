@@ -18,7 +18,7 @@ docker run -d \
     -p 2004:2004 \
     -p 2005:2005 \
     -p 7007:7007 \
-    yakud/carbon-clickhouse
+    yakud/carbon-clickhouse-docker
 ```
 
 ### Run with custom config
@@ -30,7 +30,7 @@ docker run -d \
     -p 2004:2004 \
     -p 2005:2005 \
     -p 7007:7007 \
-    yakud/carbon-clickhouse
+    yakud/carbon-clickhouse-docker
 ```
 
 ### Run with data volume
@@ -42,5 +42,5 @@ docker run -d \
     -p 2004:2004 \
     -p 2005:2005 \
     -p 7007:7007 \
-    yakud/carbon-clickhouse
+    yakud/carbon-clickhouse-docker
 ```
